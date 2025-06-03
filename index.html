@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عبدالرحمن للدهانات - أفضل خدمات الدهانات الداخلية والخارجية في الدمام، بخبرة عالية وجودة فائقة.">
+    <meta name="keywords" content="دهانات, دهانات الدمام, معلم دهانات, دهانات فاخرة, ترميم, صبغ, طلاء, عبدالرحمن للدهانات, أعمال الدهانات, دهان محترف في الدمام, ديكورات دهانات, صباغ ممتاز, أعمال تجديد وتشطيب">
+    <meta name="author" content="عبدالرحمن للدهانات">
+    <title>عبدالرحمن للدهانات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Tahoma', sans-serif;
+            background: linear-gradient(135deg, #251f1f 0%, #3d3a3d 100%);
+            color: #ffe8e8;
+            direction: rtl;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1604014237744-0362ba1f8f38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center;
+            background-size: cover;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background-color: rgba(33, 22, 41, 0.6);
+        }
+        header h1 {
+            position: relative;
+            color: #f0c040;
+            font-size: 2em;
+            margin: 0 0 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #eee;
+            margin: 0;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 20px 0 0;
+            position: relative;
+        }
+        nav ul li a {
+            color: #f0c040;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social {
+            position: relative;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .social a {
+            color: #f0c040;
+            font-size: 1.6em;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section h2 {
+            color: #f0c040;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            padding: 0;
+            list-style: none;
+        }
+        .section ul li {
+            margin-bottom: 10px ;
+        }
+        .testimonial, .faq {
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .testimonial strong, .faq-question {
+            color: #f0c040;
+        }
+        .btn {
+            background-color: #f0c040;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .footer-icons a {
+            color: #f0c040;
+            font-size: 1.60em;
+        }
+        #topBtn {
+            position: fixed;
+            bottom: 30px;
+            left: 20px;
+            background-color: #f0c040 ;
+            border:#251616;
+            cursor: pointer;
+            font-size:x-large;
+            display: none;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        image {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            object-fit: cover;
+        }
+        .image img {
+            width: 300px;
+            background-color: rgb(65, 58, 66);
+            height: 400px;
+            padding: 10px;
+            object-fit: cover;
+            border-radius: 10px;    
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            background-color: rgb(221, 224, 228);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: medium;
+            border:none;
+        }
+        input[type="submit"] {
+            background-color: #f7c028;
+            color: #000;
+            font-weight: bold;
+            font-size: large;
+            cursor: pointer;
+        }
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .testimonial {
+            background-color: #2a2a2a;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+        .testimonial strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #f0c040;
+        }
+        footer{
+            width: 100%;
+            background-color: #111;
+            color:#fff;
+            margin: 0;
+            padding: 40px 5%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        footer h3{
+            color: #f0c040;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        footer p{
+            max-width: 800px;
+            margin: 0 auto 15px;
+            line-height: 1.8;
+        }
+        footer a{
+            color: #f0c040;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer-links{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+        .footer-links a{
+            color: #aaa;
+            text-decoration: none;
+        }
+        .footer-bottom{
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <!-- رأس الصفحة -->
+<header>
+        <h1>عبدالرحمن للدهانات</h1>
+        <p>خدمات دهانات وديكورات داخلية وخارجية احترافية في الدمام</p>
+    <nav>
+        <ul>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#gallery">معرض الأعمال</a></li>
+            <li><a href="#testimonials">آراء العملاء</a></li>
+            <li><a href="#location">موقعنا</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+    <div class="social">
+        <a href="https://wa.me/966502925521" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:0502925521"><i class="fas fa-phone"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>
+    </div>
+</header>
+
+<div class="content">
+    <section id="about" class="section">
+        <h2>من نحن</h2>
+        <p><strong>عبدالرحمن للدهانات</strong> <strong>نمتلك خبرة تمتد لسنوات في تقديم أفضل خدمات الدهانات الداخلية والخارجية، باستخدام أحدث التقنيات والمواد ذات الجودة العالية. هدفنا هو رضا العميل من خلال العمل المتقن والتصاميم الراقية التي تلبي مختلف الأذواق والاحتياجات.</strong></p>
+    </section>
+    <section id="services" class="section">
+            <h2>خدماتنا</h2>
+            <ul>
+                <h3><li>دهانات داخلية فاخرة للمنازل والفلل</li></h3>
+                <h3><li>دهانات خارجية مقاومة للحرارة والرطوبة</li></h3>
+                <h3><li>ديكورات جدارية فنية</li></h3>
+                <h3><li>ترميم وصيانة الأسطح</li></h3>
+                <h3><li>تشطيبات نهائية باحترافية عالية</li></h3>
+                <h3><li>استشارات اختيار الألوان المناسبة</li></h3>
+            </ul>
+    </section>
+    <section id="gallery" class="section">
+        <h2>أعمالنا</h2>
+        <div class="image">
+            <img src="img (1).jpg" alt="دهان غرفة نوم">
+            <img src="img (2).jpg" alt="دهانات مجلس">
+            <img src="img (3).jpg" alt="تشطيب خارجي">
+            <img src="img (4).jpg" alt="تشطيب خارجي">
+            <img src="img (5).jpg" alt="تشطيب خارجي">
+            <img src="img (6).jpg" alt="تشطيب خارجي">
+            <img src="img (7).jpg" alt="تشطيب خارجي"> 
+            <img src="img (8).jpg" alt="تشطيب خارجي">
+            <img src="img (9).jpg" alt="تشطيب خارجي">
+            <img src="img (10).jpg" alt="تشطيب خارجي">
+            <img src="img (11).jpg" alt="تشطيب خارجي">
+            <img src="img (12).jpg" alt="تشطيب خارجي">
+            <img src="img (13).jpg" alt="تشطيب خارجي">
+            <img src="img (14).jpg" alt="تشطيب خارجي">
+            <img src="img (15).jpg" alt="تشطيب خارجي">
+            <img src="img (16).jpg" alt="تشطيب خارجي">
+            <img src="img (17).jpg" alt="تشطيب خارجي">
+            <img src="img (18).jpg" alt="تشطيب خارجي">
+            <img src="img (19).jpg" alt="تشطيب خارجي">
+            <img src="img (20).jpg" alt="تشطيب خارجي">
+            <img src="img (21).jpg" alt="تشطيب خارجي">
+            <img src="img (22).jpg" alt="تشطيب خارجي">
+            <img src="img (23).jpg" alt="تشطيب خارجي">
+            <img src="img (24).jpg" alt="تشطيب خارجي">
+            <img src="img (25).jpg" alt="تشطيب خارجي">
+            <img src="img (26).jpg" alt="تشطيب خارجي">
+            <img src="img (27).jpg" alt="تشطيب خارجي">
+            <img src="img (28).jpg" alt="دهان غرفة نوم">
+            <img src="img (29).jpg" alt="دهانات مجلس">
+            <img src="img (30).jpg" alt="تشطيب خارجي">
+            <img src="img (31).jpg" alt="تشطيب خارجي">
+            <img src="img (32).jpg" alt="تشطيب خارجي">
+            <img src="img (33).jpg" alt="تشطيب خارجي">
+            <img src="img (34).jpg" alt="تشطيب خارجي"> 
+            <img src="img (35).jpg" alt="تشطيب خارجي">
+            <img src="img (37).jpg" alt="تشطيب خارجي">
+            <img src="img (38).jpg" alt="تشطيب خارجي">
+            <img src="img (39).jpg" alt="تشطيب خارجي">
+            <img src="img (40).jpg" alt="تشطيب خارجي">
+            <img src="img (41).jpg" alt="تشطيب خارجي">
+            <img src="img (42).jpg" alt="تشطيب خارجي">
+            <img src="img (43).jpg" alt="تشطيب خارجي">
+            <img src="img (44).jpg" alt="تشطيب خارجي">
+            <img src="img (45).jpg" alt="تشطيب خارجي">
+            <img src="img (46).jpg" alt="تشطيب خارجي">
+            <img src="img (47).jpg" alt="تشطيب خارجي">
+            <img src="img1.jpg" alt="تشطيب خارجي">
+            <img src="img2.jpg" alt="تشطيب خارجي">
+            <img src="img3.jpg" alt="تشطيب خارجي">
+            <img src="img4.jpg" alt="تشطيب خارجي">
+            <img src="img5.jpg" alt="تشطيب خارجي">
+            <img src="img6.jpg" alt="تشطيب خارجي">
+            <img src="img7.jpg" alt="تشطيب خارجي">
+            <img src="img8.jpg" alt="تشطيب خارجي">
+        </div>
+    </section>
+    <section id="testimonials" class="section">
+        <h2>آراء العملاء</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <strong>سعيد القحطاني</strong>
+                خدمة ممتازة واحترافية عالية. تم إنجاز العمل في الوقت المحدد وبجودة رائعة.
+            </div>
+            <div class="testimonial">
+                <strong>أم فهد</strong>
+                الألوان جميلة جدًا والتشطيب كان مثالي. أنصح بالتعامل معهم.
+            </div>
+            <div class="testimonial">
+                <strong>عبدالله الشهري</strong>
+                تعامل راقٍ ونتائج تفوق التوقعات. شكرًا عبدالرحمن وفريقه.
+            </div>
+        </div>
+    </section>
+    <section id="location" class="section">
+        <h2>موقعنا</h2>
+        <p>نخدم جمبع احياء الدمام وماحولها. تواصل معنا لتحديد موعد زيارة مجانية.</p>
+        <iframe src="https://www.google.com/maps?q=الدمام,+السعودية&output=embed" allowfullscreen></iframe>
+    </section>
+    <section id="contact" class="section">    
+        <h2>تواصل معنا</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="الاسم الكامل" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+            <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <input type="submit" value="إرسال">
+        </form>
+    </section>
+</div>
+<footer>
+    <h3>عبدالرحمن للدهانات</h3>
+    <p>نقدم خدمات الدهانات والتشطيب الداخلي والخارجي بأعلى جودة واحترافية في المنطقة الشرقية.</p>
+    <p>العنوان: الدمام، المملكة العربية السعودية</p>
+    <p>الهاتف: <a href="tel:0502925521">0502925521</a></p>
+    <p>واتساب: <a href="https://wa.me/966502925521" target="_blank">راسلنا مباشرة</a></p>
+    <div class="footer-icons">
+        <a href="https://wa.me/966502925521" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:0502925521"><i class="fas fa-phone"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>
+    </div>
+    <div class="footer-links">
+        <a href="#about">عنا</a>
+        <a href="#services">الخدمات</a>
+        <a href="#gallery">الأعمال</a>
+        <a href="#location">موقعنا</a>
+        <a href="#contact">تواصل معنا</a>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 عبدالرحمن للدهانات. جميع الحقوق محفوظة.
+    </div>
+</footer>
+<button id="topBtn" onclick="scrollToTop()">أعلى الصفحة</button>
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            alert("مرحبًا بك في موقع عبدالرحمن للدهانات – نحن في خدمتك!");
+        }, 500);
+    };
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function() {
+        topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
+    };
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+</script>
+</body>
+</html>
